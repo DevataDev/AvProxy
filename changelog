@@ -1,4 +1,8 @@
 
+v2.05
+	- add reply 404 not found if no channel in Apple/
+	- fix m3u8 parser for m3u8 prog list
+
 v2.04
 	- reimprove prev fix and include old fix
 
