@@ -1,4 +1,7 @@
 
+v2.07
+	- fix http retry url timeout
+
 v2.06
 	- refix M3U8 parser for strange playllist 0D 0A sequence
 
