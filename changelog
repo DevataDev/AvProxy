@@ -1,4 +1,15 @@
 
+v2.09
+	- add UDP/RTP push target
+
+	example config
+
+	<Entry Name="test" Url="http://myhttp.com/play/a02h">
+	        <TsPush Url="rtp://192.168.65.132:8888"/>
+	        <TsPush Url="udp://192.168.65.134:8888"/>
+	        <TsPush Url="rtp://192.168.65.135:8888"/>
+	</Entry>
+
 v2.08
 	- fix DATA stream errors
 	- static binary without stdc++ depend
