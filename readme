@@ -1,21 +1,21 @@
 
-simple IPTV proxy, small, faster, compact
+Simple IPTV proxy, small, faster, compact
 
-avail http/hls/udp/rtp input and output
+Available protocols are HTTP/HLS/UDP/RTP for input and output
 
-for config used xml
+For config is use xml
 
-can usage local or remote config
-local config use from same dir
-remote config setup from start param -ConfigUrl http://some url/some_config.xml
+It can usage local or remote config
+Local config use from same dir and have name AvProxy.xml
+Remote config setup from start param -ConfigUrl http://someurl/some_config.xml
 
-local config not update, only restart AvProxy reload config
-remote config update from some time
+Local config is not update, only restart AvProxy reload it
+Remote config is update some time
 
-if config changed all input and output will reconfigure
-for update config just change (increase) ver number in xml Ver="1"
+All input and output will reconfigure when remote config changed
+For update config just change (increase) ver number in xml config Ver="1"
 
-exmaple config
+example config
 
 <?xml version="1.0" encoding="GB2312"?>
 <AvProxy Ver="1">
@@ -23,26 +23,30 @@ exmaple config
 <Entry Name="udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
 <Entry Name="98" Url="http://frosite3..any.com/url/any" />
 <Entry Name="test" Url="http://frosite4.com" />
+	        <TsPush Url="rtp://192.168.65.132:8888"/>
+	        <TsPush Url="udp://192.168.65.134:8888"/>
+	        <TsPush Url="rtp://192.168.65.135:8888"/>
 <Entry Name="any_name" Url="m3u8://frosite5.com/url/test.m3u8" />
 </AvProxy>
 
-where is input
-http input use scheme http://
-hls input use scheme m3u8://
-rtp/udp input use as rtp:// or udp://
+There are input schemes
+http -  http://
+hls - m3u8://
+rtp - rtp://
+udp - udp://
 
-by default AvProxy bind to 80 port, but can be change -HttpPort 8080
+By default AvProxy bind to 80 port, but can be change -HttpPort 8080
 
-output avail through http://ip/Apple/name of Entry
-for exmaple
+outputs available through http://ip/Apple/name of Entry
+for example
 http://ip/Apple/12
 http://ip/Apple/udp
 http://ip/Apple/98
 http://ip/Apple/test
 http://ip/Apple/any_name
 
-dobule entry name in confg will ignore
+They will ignore a double entry names in config 
 
-all input after start is active
+All input is active after start
 
-for trace use -Trace option
+For trace debug use -Trace option
