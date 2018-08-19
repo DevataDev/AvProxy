@@ -1,6 +1,9 @@
 
+v2.03
+	- fix memory leak after switch to scramble stream
+
 v2.02.0
-	 fix fast close tcp session
+	- fix fast close tcp session
 
 v2.02
 	- add users stat page http://ip/Users/
