@@ -47,6 +47,6 @@ http://ip/Apple/any_name
 
 They will ignore a double entry names in config 
 
-All input is active after start
+All inputs are active after start
 
 For trace debug use -Trace option
