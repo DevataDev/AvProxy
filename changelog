@@ -1,4 +1,7 @@
 
+v2.02.0
+	 fix fast close tcp session
+
 v2.02
 	- add users stat page http://ip/Users/
 	- fix PartialContent Ranges: bytes=
