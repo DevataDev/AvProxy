@@ -1,0 +1,12 @@
+
+- build for arm, windows x64, freebsd x64
+- reimplement ts split stream by segments, because have some problem with scramble streams
+- make common m3u8 as optional
+- append rtsp in/out stream
+- allow choose and use m3u8 bandwidth 
+- manual reload input channel
+- reload input channel if response 404
+- www auth input/output
+- AES decrypt chunks
+- add -relay options for simular work like udpxy
+- if input channel die, write to output 404 error
