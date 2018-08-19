@@ -1,4 +1,8 @@
 
+v2.02
+	- add users stat page http://ip/Users/
+	- fix PartialContent Ranges: bytes=
+
 v2.01
 	- add tag VERSION:3 to hls
 	- add param to change default port -HttpPort 8080 as example
