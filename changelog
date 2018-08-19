@@ -1,4 +1,7 @@
 
+v2.04
+	- reimprove prev fix and include old fix
+
 v2.03
 	- fix memory leak after switch to scramble stream
 
