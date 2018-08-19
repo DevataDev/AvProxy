@@ -1,4 +1,14 @@
 
+v2.01
+	- add tag VERSION:3 to hls
+	- add param to change default port -HttpPort 8080 as example
+	- add param in xml Entry conf, Desc="name of channel", for publsh name in m3u8 playlist
+	- add param for tuning cache of hls storage, for decrise call malloc,free
+	  param -AppleCache 50 as example, by default 0 if no cache
+	  one number of value eq 200 kb
+	- fix descriptor leak when use -ConfigUrl
+	- fix generate m3u8 playlist for non default port
+
 v2.0
 	- avail entry with end in url scheme like .htm .m3u8 .txt .ts
 	- access by entry without extension will avail as regular http stream non hls
