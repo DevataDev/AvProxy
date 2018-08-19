@@ -1,0 +1,48 @@
+
+simple IPTV proxy, small, faster, compact
+
+avail http/hls/udp/rtp input and output
+
+for config used xml
+
+can usage local or remote config
+local config use from same dir
+remote config setup from start param -ConfigUrl http://some url/some_config.xml
+
+local config not update, only restart AvProxy reload config
+remote config update from some time
+
+if config changed all input and output will reconfigure
+for update config just change (increase) ver number in xml Ver="1"
+
+exmaple config
+
+<?xml version="1.0" encoding="GB2312"?>
+<AvProxy Ver="1">
+<Entry Name="12" Url="http://frosite2.com:8080/url" />
+<Entry Name="udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
+<Entry Name="98" Url="http://frosite3..any.com/url/any" />
+<Entry Name="test" Url="http://frosite4.com" />
+<Entry Name="any_name" Url="m3u8://frosite5.com/url/test.m3u8" />
+</AvProxy>
+
+where is input
+http input use scheme http://
+hls input use scheme m3u8://
+rtp/udp input use as rtp:// or udp://
+
+by default AvProxy bind to 80 port, but can be change -HttpPort 8080
+
+output avail through http://ip/Apple/name of Entry
+for exmaple
+http://ip/Apple/12
+http://ip/Apple/udp
+http://ip/Apple/98
+http://ip/Apple/test
+http://ip/Apple/any_name
+
+dobule entry name in confg will ignore
+
+all input after start is active
+
+for trace use -Trace option
