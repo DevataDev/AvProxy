@@ -1,4 +1,9 @@
 
+v2.08
+	- fix DATA stream errors
+	- static binary without stdc++ depend
+	- new cmd opt -Trace to enable trace print in console, by default any trace disable
+
 v2.07
 	- fix http retry url timeout
 
