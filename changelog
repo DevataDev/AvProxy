@@ -1,0 +1,8 @@
+
+v2.0
+	- avail entry with end in url scheme like .htm .m3u8 .txt .ts
+	- access by entry without extension will avail as regular http stream non hls
+	- correct chunks for hls stream strim by PES start
+	- ts chunks name with md5
+	- ts chunks allow use Ranges bytes request
+	- access by default url got list of all channels
