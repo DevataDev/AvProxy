@@ -17,7 +17,7 @@ For update config just change (increase) ver number in xml config Ver="1"
 
 example config
 
-<?xml version="1.0" encoding="GB2312"?>
+<?xml version="1.0"?>
 <AvProxy Ver="1">
 <Entry Name="12" Url="http://frosite2.com:8080/url" />
 <Entry Name="udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
