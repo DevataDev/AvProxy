@@ -37,13 +37,25 @@ udp - udp://
 
 By default AvProxy bind to 80 port, but can be change -HttpPort 8080
 
-outputs available through http://ip/Apple/name of Entry
+http streaming outputs available through http://ip/Apple/name of Entry
 for example
 http://ip/Apple/12
 http://ip/Apple/udp
 http://ip/Apple/98
 http://ip/Apple/test
 http://ip/Apple/any_name
+
+http live streaming (hls) outputs available by extension .m3u8 of Entry
+for example
+http://ip/Apple/12/index.m3u8
+http://ip/Apple/udp/index.m3u8
+http://ip/Apple/98/index.m3u8
+http://ip/Apple/test/index.m3u8
+http://ip/Apple/any_name/index.m3u8
+
+All of the outputs are available through http://ip as m3u8 playlist
+
+To access the users page follow http://ip/Users
 
 They will ignore a double entry names in config 
 
