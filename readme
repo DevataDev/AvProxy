@@ -37,23 +37,33 @@ udp - udp://
 
 By default AvProxy bind to 80 port, but can be change -HttpPort 8080
 
-http streaming outputs available through http://ip/Apple/name of Entry
+http streaming outputs available through http://ip/live/name of Entry
 for example
-http://ip/Apple/12
-http://ip/Apple/udp
-http://ip/Apple/98
-http://ip/Apple/test
-http://ip/Apple/any_name
+http://ip/live/12
+http://ip/live/udp
+http://ip/live/98
+http://ip/live/test
+http://ip/live/any_name
 
 http live streaming (hls) outputs available by extension .m3u8 of Entry
 for example
-http://ip/Apple/12/index.m3u8
-http://ip/Apple/udp/index.m3u8
-http://ip/Apple/98/index.m3u8
-http://ip/Apple/test/index.m3u8
-http://ip/Apple/any_name/index.m3u8
+http://ip/live/12/index.m3u8
+http://ip/live/udp/index.m3u8
+http://ip/live/98/index.m3u8
+http://ip/live/test/index.m3u8
+http://ip/live/any_name/index.m3u8
 
-All of the outputs are available through http://ip as m3u8 playlist
+All of the outputs are available through http://ip/live/playlist.m3u8 as playlist
+
+For configure simple VOD, add "-VodDir some_root_dir" as param
+#mkdir some_root_dir
+#copy /mnt/file_in_some_root_dir.mp4 some_root_dir
+#AvProxy -VodDir some_root_dir
+
+All of a files in some_root_dir available through http://ip/vod/playlist.m3u8 as playlist
+or direct access http://ip/vod/file_in_some_root_dir.mp4
+
+This is basic file access, no zero copy or else like remux, will improve in future
 
 To access the users page follow http://ip/Users
 
@@ -61,4 +71,4 @@ They will ignore a double entry names in config
 
 All inputs are active after start
 
-For trace debug use -Trace option
+For trace debug use "-Trace option"

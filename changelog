@@ -1,4 +1,14 @@
 
+v2.11
+	- add xml error message and line,pos of error
+	- add simple vod, -VodDir /cache/
+	  and access through http://ip/vod/playlist.m3u8 to get playlist of all file in /cache/ dir
+	- change Apple to live path http://ip/live/playlist.m3u8 to get all entries
+
+v2.10
+	- add PCR DTS PTS trace info
+	no build
+
 v2.09
 	- add UDP/RTP push target
 
