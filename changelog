@@ -1,4 +1,12 @@
 
+v2.12
+	- add http basic and digest authorization on http/m3u8 input
+	  http://username:password@hosname/path
+	  or
+	  m3u8://username:password@hosname/path
+	- add https secure socket layer for http/m3u8 input
+	  https://hostname/path or m3u8s://hostname/path
+
 v2.11
 	- add xml error message and line,pos of error
 	- add simple vod, -VodDir /cache/
