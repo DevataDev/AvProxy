@@ -2,14 +2,21 @@
 Simple IPTV proxy, small, faster, compact
 
 Available protocols are HTTP(S)/HLS(S)/UDP/RTP for input and output
-Basic/Digest Auth for input
+Basic/Digest Auth for ingress url
+
+Available options are:
+-Trace			verbose debug
+-Daemon			became as daemon
+-Log [somedir]		default Log/
+-VodDir somedir		default /cache/
+-HttpPort number	default 80
+-ConfigUrl http[s]://[user:[pass]]host[:port]/[path/]file.xml
 
 For config is use xml
 
 It can usage local or remote config
 Local config use from same dir and have name AvProxy.xml
-Remote config setup from start param -ConfigUrl http://someurl/some_config.xml
-Secure connection with Auth also available for remote contfig
+Remote config setup from startup options -ConfigUrl
 
 Local config is not update, only restart AvProxy reload it
 Remote config is update some time
@@ -21,23 +28,23 @@ example config
 
 <?xml version="1.0"?>
 <AvProxy Ver="1">
-<Entry Name="12" Url="http://login:@frosite2.com:8080/url" />
-<Entry Name="udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
-<Entry Name="98" Url="http://frosite3..any.com/url/any" />
-<Entry Name="test" Url="https://user:pass@frosite4.com" />
+<Entry Name="12" Desc="12" Url="http://login:@fromsite2.com:8080/url" />
+<Entry Name="udp" Desc="its udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
+<Entry Name="98" Desc="some any 98" Url="http://fromsite3.any.com/url/any" />
+<Entry Name="test" Desc="just test" Url="https://user:pass@fromsite4.com" />
 	        <TsPush Url="rtp://192.168.65.132:8888"/>
 	        <TsPush Url="udp://192.168.65.134:8888"/>
 	        <TsPush Url="rtp://192.168.65.135:8888"/>
-<Entry Name="any_name" Url="m3u8://frosite5.com/url/test.m3u8" />
+<Entry Name="any_name" Desc="last name" Url="m3u8://fromsite5.com/url/test.m3u8" />
 </AvProxy>
 
-There are input schemes
+There are input schemes:
 http -  http:// and https:// for ssl
 hls - m3u8:// and m3u8s:// for ssl
 rtp - rtp://
 udp - udp://
 
-By default AvProxy bind to 80 port, but can be change -HttpPort 8080
+"Desc" uses for description info in playlist.m3u8
 
 http streaming outputs available through http://ip/live/name of Entry
 for example
@@ -57,7 +64,7 @@ http://ip/live/any_name/index.m3u8
 
 All of the outputs are available through http://ip/live/playlist.m3u8 as playlist
 
-For configure simple VOD, add "-VodDir some_root_dir" as param
+For configure simple VOD
 #mkdir some_root_dir
 #copy /mnt/file_in_some_root_dir.mp4 some_root_dir
 #AvProxy -VodDir some_root_dir
@@ -72,5 +79,3 @@ To access the users page follow http://ip/Users
 They will ignore a double entry names in config 
 
 All inputs are active after start
-
-For trace debug use "-Trace option"
