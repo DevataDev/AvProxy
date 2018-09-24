@@ -1,4 +1,9 @@
 
+v2.13
+	- add https for output
+	  available options -ssl_port, -ssl_cert, -ssl_cert_key, -ssl_cert_key_pass
+	  there is only one service port available http or https
+
 v2.12
 	- add http basic and digest authorization on http/m3u8 input
 	  http://username:password@hosname/path

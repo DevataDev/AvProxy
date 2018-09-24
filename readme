@@ -12,7 +12,17 @@ Available options are:
 -HttpPort number	default 80
 -ConfigUrl http[s]://[user:[pass]]host[:port]/[path/]file.xml
 
+-ssl_port number		default 0, http is disabled if ssl is enabled
+-ssl_cert file.crt		certificate
+-ssl_cert_key file.key		certificate key
+-ssl_cert_key_pass file.pw	the file with a password if passphrase is required
+
 For config is use xml
+as simple tag
+<line option="val"/>
+or full tag
+<line option="val">
+</line>
 
 It can usage local or remote config
 Local config use from same dir and have name AvProxy.xml
@@ -46,35 +56,35 @@ udp - udp://
 
 "Desc" uses for description info in playlist.m3u8
 
-http streaming outputs available through http://ip/live/name of Entry
+http streaming outputs available through http[s]://hostname/live/name of Entry
 for example
-http://ip/live/12
-http://ip/live/udp
-http://ip/live/98
-http://ip/live/test
-http://ip/live/any_name
+http[s]://hostname/live/12
+http[s]://hostname/live/udp
+http[s]://hostname/live/98
+http[s]://hostname/live/test
+http[s]://hostname/live/any_name
 
 http live streaming (hls) outputs available by extension .m3u8 of Entry
 for example
-http://ip/live/12/index.m3u8
-http://ip/live/udp/index.m3u8
-http://ip/live/98/index.m3u8
-http://ip/live/test/index.m3u8
-http://ip/live/any_name/index.m3u8
+http[s]://hostname/live/12/index.m3u8
+http[s]://hostname/live/udp/index.m3u8
+http[s]://hostname/live/98/index.m3u8
+http[s]://hostname/live/test/index.m3u8
+http[s]://hostname/live/any_name/index.m3u8
 
-All of the outputs are available through http://ip/live/playlist.m3u8 as playlist
+All of the outputs are available through http[s]://hostname/live/playlist.m3u8 as playlist
 
 For configure simple VOD
 #mkdir some_root_dir
 #copy /mnt/file_in_some_root_dir.mp4 some_root_dir
 #AvProxy -VodDir some_root_dir
 
-All of a files in some_root_dir available through http://ip/vod/playlist.m3u8 as playlist
-or direct access http://ip/vod/file_in_some_root_dir.mp4
+All of a files in some_root_dir available through http[s]://hostname/vod/playlist.m3u8 as playlist
+or direct access http[s]://hostname/vod/file_in_some_root_dir.mp4
 
 This is basic file access, no zero copy or else like remux, will improve in future
 
-To access the users page follow http://ip/Users
+To access the users page follow http[s]://hostname/users
 
 They will ignore a double entry names in config 
 
