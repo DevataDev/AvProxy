@@ -10,7 +10,7 @@ Available options are:
 -Log [somedir]		default Log/
 -VodDir somedir		default /cache/
 -HttpPort number	default 80
--ConfigUrl http[s]://[user:[pass]]host[:port]/[path/]file.xml
+-ConfigUrl http[s]://[[user]:[pass]@]host[:port]/[path/]file.xml
 
 -ssl_port number		default 0, http is disabled if ssl is enabled
 -ssl_cert file.crt		certificate
