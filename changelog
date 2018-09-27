@@ -1,4 +1,9 @@
 
+v2.14
+	- imrove hls variant for choose BANDWIDTH
+	  default bandwidth in config xml Bandwidth=number in kpbs
+	  apple hls uses bps in m3u8 variant, 1 bps=1000 kbps in this case
+	  report bandwidth to trace
 v2.13
 	- add https for output
 	  available options -ssl_port, -ssl_cert, -ssl_cert_key, -ssl_cert_key_pass
