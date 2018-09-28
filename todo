@@ -5,6 +5,6 @@
 - append rtsp in/out stream
 - manual reload input channel
 - reload input channel if response 404
-- www auth input/output
+- www auth output
 - add -relay options for simular work like udpxy
 - if input channel die, write to output 404 error
