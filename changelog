@@ -1,4 +1,8 @@
 
+v2.15
+	- add AES-128 method for hls input
+	- fix HLS, don't fetch segment often than segment duration
+
 v2.14
 	- imrove hls variant for choose BANDWIDTH
 	  default bandwidth in config xml Bandwidth=number in kpbs

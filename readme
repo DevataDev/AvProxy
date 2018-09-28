@@ -3,11 +3,12 @@ Simple IPTV proxy, small, faster, compact
 
 Available protocols are HTTP(S)/HLS(S)/UDP/RTP for input and output
 Basic/Digest Auth for ingress url
+AES-128 for HLS(s) input
 
 Available options are:
 -Trace			verbose debug
 -Daemon			became as daemon
--Log [somedir]		default Log/
+-Log somedir		name of log directory in Log/somedir
 -VodDir somedir		default /cache/
 -HttpPort number	default 80
 -ConfigUrl http[s]://[[user]:[pass]@]host[:port]/[path/]file.xml
