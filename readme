@@ -3,7 +3,7 @@ Simple IPTV proxy, small, faster, compact
 
 Available protocols are HTTP(S)/HLS(S)/UDP/RTP for input and output
 Basic/Digest Auth for ingress url
-AES-128 for HLS(s) input
+AES-128 for HLS(S) input
 
 Available options are:
 -Trace			verbose debug
