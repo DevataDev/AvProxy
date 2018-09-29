@@ -31,3 +31,4 @@ unsorting unreal idea
 - P2P live/vod streaming middleware (seems only for commerce)
 - switch from C++0x to C++17
 - H265
+- TCP options nondelay, nopush, congestion
