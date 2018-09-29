@@ -24,7 +24,7 @@ unsorting unreal idea
 - UDP cbr
 - switch config system to flex/bison
 - multi domain SSL for output
-- make output as option and move it from cmdline to config
+- make HTTP(S)/HLS(S) output as option and move it from cmdline to config
 - strip OPENSSL size or switch to another SSL solution
 - transcoding with lib ffmpeg(?) (seems only for commerce)
 - coroutine per connections on thread (seems only for commerce)
