@@ -1,10 +1,33 @@
+unsorting unreal idea
 
 - build for arm, windows x64, freebsd x64
-- reimplement ts split stream by segments, because have some problem with scramble streams
-- make common m3u8 as optional
-- append rtsp in/out stream
-- manual reload input channel
-- reload input channel if response 404
-- www auth output
-- add -relay options for simular work like udpxy
-- if input channel die, write to output 404 error
+- reimplement ts split stream by segments, because have some problem with scramble streams (remux)
+- make common m3u8 as optional (?)
+- append RTSP input/outut stream (seems only for commerce)
+- manual reload input channel (?)
+- reload input channel if response 404 (seems for HLS refetch variant)
+- www auth output, is it the RADIUS or file ?
+- add relay options for simular work like udpxy (only arm build for openwrt ?)
+- if input channel die(unavailable), write to HTTP(S)/? output 404 error
+- concat HTTP(S) and HLS(S) input as one
+- mmap for zerocopy
+- switch chunks file/memory
+- SAMPLE-AES for HLS/MP4 input/output
+- AES-128 for HLS output
+- MP4 for HLS/DASH input/output
+- DVB(S(2)/T(2)/C/...?)
+- newcam proto for DVB
+- WebSocket output for ... ?
+- WEBRTC(SRTP/DTLS/SDP) for output (seems only for commerce)
+- RTCP for robust RTP streaming
+- improve loging system per input/output channel
+- UDP cbr
+- switch config system to flex/bison
+- multi domain SSL for output
+- make output as option and move it from cmdline to config
+- strip OPENSSL size or switch to another SSL solution
+- transcoding with lib ffmpeg(?) (seems only for commerce)
+- coroutine per connections on thread (seems only for commerce)
+- P2P live/vod streaming middleware (seems only for commerce)
+- switch from C++0x to C++17
+- H265
