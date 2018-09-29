@@ -3,7 +3,7 @@ unsorting unreal idea
 - build for arm, windows x64, freebsd x64
 - reimplement ts split stream by segments, because have some problem with scramble streams (remux)
 - make common m3u8 as optional (?)
-- append RTSP input/outut stream (seems only for commerce)
+- append RTSP(S) input/outut stream (seems only for commerce)
 - manual reload input channel (?)
 - reload input channel if response 404 (seems for HLS refetch variant)
 - www auth output, is it the RADIUS or file ?
@@ -32,3 +32,5 @@ unsorting unreal idea
 - switch from C++0x to C++17
 - H265
 - TCP options nondelay, nopush, congestion
+- RTMP for input/output, is it still need ?
+
