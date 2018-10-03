@@ -1,7 +1,7 @@
-unsorting unreal idea
+unsorting unreal ideas
 
 - build for arm, windows x64, freebsd x64
-- reimplement ts split stream by segments, because have some problem with scramble streams (remux)
+- reimplement mpegts split stream by segments, because have some problem with scramble streams (remux)
 - make common m3u8 as optional (?)
 - append RTSP(S) input/outut stream (seems only for commerce)
 - manual reload input channel (?)
@@ -33,4 +33,4 @@ unsorting unreal idea
 - H265
 - TCP options nondelay, nopush, congestion
 - RTMP for input/output, is it still need ?
-
+- Akamai / AWS protocols
