@@ -2,6 +2,7 @@
 v2.16
 	- add AES-128 method for hls output
 	- fix HLS refetch playlist if no segment
+	- stop play HLS if ENDLIST
 
 v2.15
 	- add AES-128 method for hls input
