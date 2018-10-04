@@ -35,3 +35,5 @@ unsorting unreal ideas
 - TCP options nondelay, nopush, congestion
 - RTMP for input/output, is it still need ?
 - Akamai / AWS protocols
+- make input ondemand
+- switch input if no signal or more errors
