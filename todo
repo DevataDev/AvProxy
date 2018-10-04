@@ -14,6 +14,7 @@ unsorting unreal ideas
 - switch chunks file/memory
 - SAMPLE-AES for HLS/MP4 input/output
 - key rotate/external for AES-128 HLS output
+- setup duration HLS segment
 - MP4 for HLS/DASH input/output
 - DVB(S(2)/T(2)/C/...?)
 - newcam proto for DVB
