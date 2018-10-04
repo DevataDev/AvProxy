@@ -3,7 +3,7 @@ Simple IPTV proxy, small, faster, compact
 
 Available protocols are HTTP(S)/HLS(S)/UDP/RTP for input and output
 Basic/Digest Auth for ingress url
-AES-128 for HLS(S) input
+AES-128 for HLS(S) input/output
 
 Available options are:
 -Trace			verbose debug
@@ -41,7 +41,7 @@ example config
 <AvProxy Ver="1">
 <Entry Name="12" Desc="12" Url="http://login:@fromsite2.com:8080/url" />
 <Entry Name="udp" Desc="its udp" Url="udp://231.1.1.1:1234?KeepAlive=61&amp;Source=192.168.60.129&amp;IFace=192.168.60.129" />
-<Entry Name="98" Desc="some any 98" Url="http://fromsite3.any.com/url/any" />
+<Entry Name="98" Desc="some any 98" AES128=1 Url="http://fromsite3.any.com/url/any" />
 <Entry Name="test" Desc="just test" Url="https://user:pass@fromsite4.com" />
 	        <TsPush Url="rtp://192.168.65.132:8888"/>
 	        <TsPush Url="udp://192.168.65.134:8888"/>
@@ -57,6 +57,7 @@ udp - udp://
 
 "Desc" uses for description info in playlist.m3u8
 "Bandwidth" uses for HLS variant to choose default bandwidth, value in kbps
+AES128=1 enable AES-128 for HLS output
 
 http streaming outputs available through http[s]://hostname/live/name of Entry
 for example
