@@ -13,7 +13,7 @@ unsorting unreal ideas
 - mmap for zerocopy
 - switch chunks file/memory
 - SAMPLE-AES for HLS/MP4 input/output
-- AES-128 for HLS output
+- key rotate/external for AES-128 HLS output
 - MP4 for HLS/DASH input/output
 - DVB(S(2)/T(2)/C/...?)
 - newcam proto for DVB
