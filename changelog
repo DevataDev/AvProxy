@@ -1,4 +1,8 @@
 
+v2.17
+	- AvProxy.xml format changed
+	- add MPTS demux for input
+	
 v2.16
 	- add AES-128 method for hls output
 	- fix HLS refetch playlist if no segment
