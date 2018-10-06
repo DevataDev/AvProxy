@@ -1,4 +1,7 @@
 
+v2.18
+	- there is no need Name for input
+
 v2.17
 	- AvProxy.xml format changed
 	- add MPTS demux for input
