@@ -66,7 +66,7 @@ v2.07
 	- fix http retry url timeout
 
 v2.06
-	- refix M3U8 parser for strange playllist 0D 0A sequence
+	- refix M3U8 parser for strange playlist 0D 0A sequence
 
 v2.05
 	- add reply 404 not found if no channel in Apple/
