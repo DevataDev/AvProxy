@@ -4,7 +4,7 @@ v2.20
 	- keep origin url for reconnect while redirect 30x
 	- improve detect hls segment
 	- setup User-Agent from config
-	- "kill -SIGUSR1 pid" - for reload local config
+	- "kill -SIGUSR1 pid" - for reload local/remote config
 	- fix handle std::exception
 	nobuild
 
