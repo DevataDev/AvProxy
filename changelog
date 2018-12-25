@@ -1,4 +1,13 @@
 
+v2.20
+	- pass Spu stream
+	- keep origin url for reconnect while redirect 30x
+	- improve detect hls segment
+	- setup User-Agent from config
+	- "kill -SIGUSR1 pid" - for reload local config
+	- fix handle std::exception
+	nobuild
+
 v2.19
 	- pass HEVC stream
 
