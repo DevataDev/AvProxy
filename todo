@@ -3,7 +3,8 @@ unsorting unreal ideas
 - build for windows x64, freebsd x64
 - reimplement mpegts split stream by segments, because have some problem with scramble streams (remux)
 - make common m3u8 as optional (?)
-- append RTSP(S) input/outut stream (seems only for commerce)
+- append RTSP(S) outut stream (seems only for commerce)
+- todo RTSP(S) auth
 - manual reload input channel (?)
 - reload input channel if response 404 (seems for HLS refetch variant)
 - www auth output, is it the RADIUS or file ?
@@ -41,3 +42,4 @@ unsorting unreal ideas
 - T2MI PLP demux/mux
 - HTSP demux/mux
 - DRM: google(Widevine),ms(PlayReady),addobe(PrimeTime),apple(Fairplay)
+- timeshift

@@ -1,4 +1,11 @@
 
+v2.21
+	- add RTSP interleave input
+	- http "Server:" response
+	- fix handle some MPEGTS desc
+	- SCTE-35 stream detect
+	nobuild
+
 v2.20
 	- pass Spu stream
 	- keep origin url for reconnect while redirect 30x
