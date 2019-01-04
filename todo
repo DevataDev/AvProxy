@@ -5,7 +5,6 @@ unsorting unreal ideas
 - make common m3u8 as optional (?)
 - append RTSP(S) outut stream (seems only for commerce)
 - todo RTSP(S) auth
-- manual reload input channel (?)
 - reload input channel if response 404 (seems for HLS refetch variant)
 - www auth output, is it the RADIUS or file ?
 - add relay options for simular work like udpxy (only arm build for openwrt ?)
