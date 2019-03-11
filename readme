@@ -9,6 +9,10 @@ MPTS demux for all of are input protocols
 Commercial support for one quarter(4 months) costs $400
 Contains bug fixes and minor improvements
 
+Commerial version contain:
+RTSP interleave input (nice for webcam remux)
+another futures in developing(see at TODO)
+
 
 Available options are:
 -Trace			verbose debug
