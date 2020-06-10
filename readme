@@ -5,6 +5,7 @@ Available protocols are HTTP(S)/HLS(S)(AES-128)/UDP/RTP for input and output
 Basic/Digest Auth for ingress url
 MPTS demux for all of are input protocols
 
+Free for usage
 
 Commercial support for one quarter(4 months) costs $400
 Contains bug fixes and minor improvements
