@@ -1,0 +1,44 @@
+### unsorting unreal ideas
+
+- build for windows x64, freebsd x64
+- reimplement mpegts split stream by segments, because have some problem with scramble streams (remux)
+- make common m3u8 as optional (?)
+- append RTSP(S) outut stream (seems only for commerce)
+- todo RTSP(S) auth
+- reload input channel if response 404 (seems for HLS refetch variant)
+- www auth output, is it the RADIUS or file ?
+- add relay options for simular work like udpxy (only arm build for openwrt ?)
+- if input channel die(unavailable), write to HTTP(S)/? output 404 error
+- concat HTTP(S) and HLS(S) input as one
+- mmap for zerocopy
+- switch chunks file/memory
+- SAMPLE-AES for HLS/MP4 input/output
+- key rotate/external for AES-128 HLS output
+- setup duration HLS segment
+- MP4 for HLS/DASH input/output
+- DVB(S(2)/T(2)/C/...?)
+- newcam proto for DVB
+- WebSocket output for ... ?
+- WEBRTC(SRTP/DTLS/SDP) for output (seems only for commerce)
+- RTCP for robust RTP streaming
+- improve loging system per input/output channel
+- UDP cbr
+- switch config system to flex/bison
+- multi domain SSL for output
+- make HTTP(S)/HLS(S) output as option and move it from cmdline to config
+- strip OPENSSL size or switch to another SSL solution
+- transcoding with lib ffmpeg(?) (seems only for commerce)
+- coroutine per connections on thread (seems only for commerce)
+- P2P live/vod streaming middleware (seems only for commerce)
+- switch from C++0x to C++17
+- H265
+- TCP options nondelay, nopush, congestion
+- RTMP for input/output, is it still need ?
+- Akamai / AWS protocols
+- make input ondemand
+- switch input if no signal or more errors
+- MPTS mux
+- T2MI PLP demux/mux
+- HTSP demux/mux
+- DRM: google(Widevine),ms(PlayReady),addobe(PrimeTime),apple(Fairplay)
+- timeshift
