@@ -10,11 +10,13 @@
 
 ## License
 
-Free for usage
+Free for usage version 2.19
 
-Commercial support for one quarter(4 months) costs $400
-- Contains bug fixes and minor improvements
+Latest lifetime version 2.21 costs $450 or bitcon equivalent
+- Contains bug fixes and minor improvements (see at changelog)
 
 Commercial version contain:
 - RTSP interleave input (nice for webcam remux)
 - another futures in developing(see at TODO)
+
+contact avproxymedia@ google mail
