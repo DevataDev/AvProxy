@@ -42,3 +42,5 @@
 - HTSP demux/mux
 - DRM: google(Widevine),ms(PlayReady),addobe(PrimeTime),apple(Fairplay)
 - timeshift
+- select->poll
+- LLHLS low latency HLS
