@@ -1,6 +1,6 @@
 ### unsorting unreal ideas
 
-- build for windows x64, freebsd x64
+- build for freebsd x64
 - reimplement mpegts split stream by segments, because have some problem with scramble streams (remux)
 - make common m3u8 as optional (?)
 - append RTSP(S) output stream

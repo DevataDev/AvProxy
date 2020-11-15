@@ -1,4 +1,9 @@
 
+## v2.22
+	- windows build x32/x64
+	- add accept4 for linux
+	nobuild
+
 ## v2.21
 	- add RTSP interleave input
 	- http "Server:" response
