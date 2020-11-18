@@ -2,6 +2,9 @@
 ## v2.22
 	- windows build x32/x64
 	- add accept4 for linux
+	- improve hls client download segments
+	- improve http/hls roundrobin requests for multi records DNS
+	- fix crash while pat/pmt changes on stream
 	nobuild
 
 ## v2.21
