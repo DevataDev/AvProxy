@@ -38,7 +38,7 @@
 - make input ondemand
 - switch input if no signal or more errors (failover)
 - MPTS mux
-- T2MI PLP demux/mux
+- T2MI PLP mux
 - HTSP demux/mux
 - DRM: google(Widevine),ms(PlayReady),addobe(PrimeTime),apple(Fairplay)
 - timeshift

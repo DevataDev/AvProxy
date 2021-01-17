@@ -3,6 +3,7 @@
 ## Simple IPTV proxy, small, faster, compact
 
 - Available protocols are HTTP(S)/HLS(S)(AES-128)/UDP/RTP for inputs and outputs
+- T2MI(PLP) demux for inputs
 - Basic/Digest Auth for ingress http[s]/hls[s] url
 - MPTS demux for all of are input protocols
 - HLS Chunks at memory
