@@ -17,8 +17,8 @@ Latest lifetime version costs $450 or bitcon equivalent
 - Contains bug fixes and minor improvements (see at changelog)
 - another futures in developing(see at TODO)
 
-contact avproxymedia@ google mail
+avproxymedia@ google mail
 
-donate $20 as thanks if you are using freeware version of AvProxy
+donate $20 by BTC as thanks if you are using freeware version of AvProxy
 
 bitcoin:3M5qi4ZjrQegLUNifBQkie9Wk3FZqFU3h8
