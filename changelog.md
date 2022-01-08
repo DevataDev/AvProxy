@@ -1,4 +1,11 @@
 
+## v2.24
+	- improve hls aes encryption/decryption speed, using hw if avail
+	- fix hls encryption memory corruption, rare case
+	- add config option for hls output, chunk count and chunk reserve
+	- improve using 'poll' instead 'select' for linux
+	nobuild
+
 ## v2.23
 	- T2MI(PLP) demux for inputs
 	nobuild

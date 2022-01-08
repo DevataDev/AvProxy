@@ -47,3 +47,7 @@
 - http2 for LLHLS
 - fMP4
 - pipe for external transcoding
+- http3(quic)
+- use epoll for linux
+- use uring for linux
+- add srt
