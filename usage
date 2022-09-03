@@ -55,7 +55,7 @@ udp - udp://
 "Bandwidth" uses for HLS variant to choose default bandwidth, value in kbps
 AES128=1 enable AES-128 for HLS output
 
-ApplePreroll=N at input section - preroll N segments
+ApplePreroll=N at input section - preroll N segments, by default 3 segments present at playlist
 as example in AvProxy.xml
 ApplePreroll=10 keep 10 segments in playlist
 
