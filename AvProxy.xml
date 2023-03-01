@@ -11,8 +11,8 @@
 	        <TsPush Url="udp://192.168.6.132:8888"/>
 	</Output>
 </Input>
-<Input ApplePreroll=10 Url="http://fromsite3.any.com/url/any">
-	<Output Name="http3"/>
+<Input Url="http://fromsite3.any.com/url/any">
+	<Output ApplePreroll=10 Name="http3"/>
 </Input>
 <Input Url="https://user:pass@fromsite4.com" />
 	<Output Name="http4">
