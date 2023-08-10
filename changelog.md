@@ -1,4 +1,8 @@
 
+## v2.19.1
+	- fix ApplePreroll/AppleReserve options
+	build linux AvProxy-x64, contact to me for build fix for another binary
+
 ## v2.24
 	- improve hls aes encryption/decryption speed, using hw if avail
 	- fix hls encryption memory corruption, rare case
